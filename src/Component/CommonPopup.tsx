@@ -1,5 +1,10 @@
 import React from "react";
-import { Dialog, DialogContent, Typography } from "@mui/material";
+import {
+  Dialog,
+  DialogActions,
+  DialogContent,
+  Typography,
+} from "@mui/material";
 import Radio from "@mui/material/Radio";
 import RadioGroup from "@mui/material/RadioGroup";
 import FormControlLabel from "@mui/material/FormControlLabel";
@@ -18,15 +23,14 @@ export default function CommonPopup(props: any) {
             style={{
               fontFamily: "Pacifico",
               color: "#7AE061",
-              fontSize: "40px",
-              marginTop: "-10px",
-              marginLeft: "20px",
+              textAlign: "center",
+              marginTop:"-5px"
             }}
           >
             {props.data.category}
           </h1>
         </div>
-        <DialogContent>
+        <DialogContent sx={{ marginLeft: "-20px" }}>
           <ol>
             {props.data.questions &&
               props.data.questions.map((item: any) => {
@@ -67,7 +71,9 @@ export default function CommonPopup(props: any) {
                         <Typography>Answer</Typography>
                       </AccordionSummary>
                       <AccordionDetails>
-                        <Typography sx={{color:"#7AE061"}}>{item.answer}</Typography>
+                        <Typography sx={{ color: "#7AE061" }}>
+                          {item.answer}
+                        </Typography>
                       </AccordionDetails>
                     </Accordion>
                   </div>
@@ -75,6 +81,20 @@ export default function CommonPopup(props: any) {
               })}
           </ol>
         </DialogContent>
+        <DialogActions>
+          <div style={{ width: "100%", height: "50px" }}>
+            <h3
+              style={{
+                fontFamily: "Pacifico",
+                color: "#0000FF",
+                textAlign: "center",
+                paddingBottom: "10px",
+              }}
+            >
+              Er. Anchal Singh
+            </h3>
+          </div>
+        </DialogActions>
       </Dialog>
     </div>
   );

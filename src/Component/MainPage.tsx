@@ -113,7 +113,9 @@ export default function MainPage() {
               src={MathLogo}
               alt=""
             />
-            <h1 style={{ fontFamily: "Pacifico",color:"#0000FF" }}>Mathematics</h1>
+            <h1 style={{ fontFamily: "Pacifico", color: "#0000FF" }}>
+              Mathematics
+            </h1>
           </div>
           <DialogContent>
             {mathdata.map((item) => {
@@ -124,14 +126,13 @@ export default function MainPage() {
                     setCurrentData(item);
                   }}
                   style={{
-                    width: "300px",
+                    width: "280px",
                     padding: "8px 10px",
                     marginTop: "20px",
                     backgroundColor: "#bdc8d9",
                     borderLeft: "10px solid #0000FF",
                     borderTopRightRadius: "10px",
                     borderBottomRightRadius: "10px",
-                    lineHeight: "0.6",
                   }}
                 >
                   <h2>{item.category}</h2>
@@ -140,7 +141,16 @@ export default function MainPage() {
             })}
           </DialogContent>
           <DialogActions>
-            <Button onClick={close}>Go Back</Button>
+            <Button
+              sx={{
+                fontFamily: "Pacifico",
+                color: "#0000FF",
+                textAlign: "center",
+              }}
+              onClick={close}
+            >
+              Go Back
+            </Button>
           </DialogActions>
         </Dialog>
       )}
@@ -152,7 +162,9 @@ export default function MainPage() {
               src={PhyLogo}
               alt=""
             />
-            <h1 style={{ fontFamily: "Pacifico",color:"#0000FF" }}>Physics</h1>
+            <h1 style={{ fontFamily: "Pacifico", color: "#0000FF" }}>
+              Physics
+            </h1>
           </div>
           <DialogContent>
             {phydata.map((item) => {
@@ -170,7 +182,6 @@ export default function MainPage() {
                     borderLeft: "10px solid #0000FF",
                     borderTopRightRadius: "10px",
                     borderBottomRightRadius: "10px",
-                    lineHeight: "0.6",
                   }}
                 >
                   <h2>{item.category}</h2>
@@ -179,7 +190,16 @@ export default function MainPage() {
             })}
           </DialogContent>
           <DialogActions>
-            <Button onClick={closephy}>Go Back</Button>
+            <Button
+              sx={{
+                fontFamily: "Pacifico",
+                color: "#0000FF",
+                textAlign: "center",
+              }}
+              onClick={closephy}
+            >
+              Go Back
+            </Button>
           </DialogActions>
         </Dialog>
       )}
@@ -191,7 +211,9 @@ export default function MainPage() {
               src={CheLogo}
               alt=""
             />
-            <h1 style={{ fontFamily: "Pacifico",color:"#0000FF" }}>Chemistry</h1>
+            <h1 style={{ fontFamily: "Pacifico", color: "#0000FF" }}>
+              Chemistry
+            </h1>
           </div>
           <DialogContent>
             {chedata.map((item) => {
@@ -202,14 +224,13 @@ export default function MainPage() {
                     setCurrentData(item);
                   }}
                   style={{
-                    width: "300px",
+                    width: "280px",
                     padding: "8px 10px",
                     marginTop: "20px",
                     backgroundColor: "#bdc8d9",
                     borderLeft: "10px solid #0000FF",
                     borderTopRightRadius: "10px",
                     borderBottomRightRadius: "10px",
-                    lineHeight: "0.6",
                   }}
                 >
                   <h2>{item.category}</h2>
@@ -218,7 +239,16 @@ export default function MainPage() {
             })}
           </DialogContent>
           <DialogActions>
-            <Button onClick={closeche}>Go Back</Button>
+            <Button
+              sx={{
+                fontFamily: "Pacifico",
+                color: "#0000FF",
+                textAlign: "center",
+              }}
+              onClick={closeche}
+            >
+              Go Back
+            </Button>
           </DialogActions>
         </Dialog>
       )}
